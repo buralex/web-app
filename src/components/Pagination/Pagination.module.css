@@ -1,0 +1,53 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .pagination {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+}
+
+.pageNum,
+.prev,
+.next {
+  margin: 0px 5px;
+}
+
+.perPage {
+  margin: 5px 5px 0px 20px;
+  min-width: 125px;
+  position: relative;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.select {
+  width: 100%;
+  margin: 0 0 0 5px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #d9d9d9;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  font-size: 14px;
+  height: 24px;
+}
+
+.perPage::after {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: black;
+}
