@@ -10,7 +10,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 30px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -107,4 +107,10 @@ html {
   border-radius: 3px;
   background-color: white;
   margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
 }

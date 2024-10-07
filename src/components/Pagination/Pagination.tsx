@@ -8,6 +8,8 @@ import { usePage } from '@/app/context/PageContext';
 import { Button } from '@/components/Button';
 import { pages } from '@/constants';
 import styles from '@/components/Pagination/Pagination.module.css';
+import { ArrowRightShortIcon } from '@/components/icons/ArrowRightShortIcon';
+import { ArrowLeftShortIcon } from '@/components/icons/ArrowLeftShortIcon';
 
 const perPageOptions = [1, 2, 5, 10, 15, 20];
 
@@ -48,7 +50,7 @@ export const Pagination = () => {
 
   return (
     <div className={styles.pagination}>
-      <div>
+      <div className="d-flex">
         <Button
           className={styles.prev}
           variant="info"
@@ -56,7 +58,7 @@ export const Pagination = () => {
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
         >
-          ←
+          <ArrowLeftShortIcon />
         </Button>
 
         {pageNumbers.map((page, index) => {
@@ -84,7 +86,7 @@ export const Pagination = () => {
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages || totalPages === 0}
         >
-          →
+          <ArrowRightShortIcon />
         </Button>
       </div>
 
