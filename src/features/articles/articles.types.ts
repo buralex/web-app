@@ -17,5 +17,5 @@ export interface ArticlesSearchParams {
 
 export interface ApiResponse<T> {
   hits: T[];
-  nbHits: number;
+  nbPages: number;
 }
