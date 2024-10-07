@@ -1,6 +1,7 @@
 import { Button } from '@/components/Button';
 import { cssClasses } from '@/utils';
 import { NavLinks } from '@/components/Sidebar/NavLinks';
+import { XIcon } from '@/components/icons/XIcon';
 import styles from '@/components/Sidebar/Sidebar.module.css';
 
 interface SidebarProps {
@@ -24,7 +25,7 @@ export const Sidebar = (props: SidebarProps) => {
         variant="info"
         onClick={props.toggleSidebar}
       >
-        <span>&times;</span>
+        <XIcon />
       </Button>
 
       <div className={styles.menuWrap}>

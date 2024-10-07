@@ -16,14 +16,14 @@ button.close {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 2px 10px;
-  margin: 15px 30px 10px 10px;
+  padding: 5px;
+  margin: 10px 30px 10px 10px;
   visibility: hidden;
 }
 
-.close span {
-  font-size: 30px;
-  color: #4e647f;
+button.close svg {
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 992px) {
