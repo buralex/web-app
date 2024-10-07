@@ -39,7 +39,7 @@ export default function Articles() {
         );
 
         setData(response.data.hits);
-        setTotalPages(Math.ceil(response.data.nbHits / itemsPerPage));
+        setTotalPages(response.data.nbPages);
         setDataError('');
         setLoading(false);
       } catch (error) {
