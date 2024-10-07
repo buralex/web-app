@@ -6,6 +6,10 @@
 - Click on an author’s username to see all articles written by that author
 - Delete article (it's a simulation)
 
+## Demo
+
+[https://buralex.github.io/web-app/home](https://buralex.github.io/web-app/home)
+
 ## Development
 
 Run the development server:
