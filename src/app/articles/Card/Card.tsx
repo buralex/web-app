@@ -123,25 +123,17 @@ export const Card = ({ article }: CardProps) => {
             </div>
 
             <div className={styles.buttons}>
-              <div className="d-flex">
-                <Button onClick={() => {}}>Action</Button>
-                <Button onClick={() => {}}>Action</Button>
-              </div>
-
-              <div className="d-flex">
-                <Button onClick={() => {}}>Action</Button>
-                <Button onClick={() => {}}>Action</Button>
-                <Button onClick={() => {}}>Action</Button>
-              </div>
-
-              <div>
-                <Button
-                  variant="danger"
-                  onClick={() => handleDelete(article.objectID)}
-                >
-                  Delete
-                </Button>
-              </div>
+              <Button onClick={() => {}}>Action 1</Button>
+              <Button onClick={() => {}}>Action 2</Button>
+              <Button onClick={() => {}}>Action 3</Button>
+              <Button onClick={() => {}}>Action 4</Button>
+              <Button onClick={() => {}}>Action 5</Button>
+              <Button
+                variant="danger"
+                onClick={() => handleDelete(article.objectID)}
+              >
+                Delete
+              </Button>
             </div>
           </>
         )}

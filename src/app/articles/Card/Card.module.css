@@ -64,6 +64,8 @@
   margin: 10px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .buttons div {
@@ -83,5 +85,9 @@
 
   .date {
     width: 110px;
+  }
+
+  .buttons {
+    gap: 10px;
   }
 }
