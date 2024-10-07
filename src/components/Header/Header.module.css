@@ -1,0 +1,29 @@
+.header {
+  background-color: #d9d9d9;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 45px;
+  gap: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+button.toggle {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 10px 15px;
+  }
+
+  .header button span {
+    display: none;
+  }
+
+  button.toggle {
+    display: block;
+  }
+}

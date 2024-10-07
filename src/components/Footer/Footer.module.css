@@ -1,0 +1,19 @@
+.footer {
+  background-color: #4e647f;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 25px;
+    align-items: center;
+    padding: 10px;
+  }
+}
