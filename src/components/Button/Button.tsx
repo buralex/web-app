@@ -6,6 +6,7 @@ interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   className?: string;
+  hint?: string;
   children: React.ReactNode;
 }
 
@@ -16,12 +17,14 @@ export const Button = ({
   disabled,
   children,
   className,
+  hint,
 }: ButtonProps) => {
   const variantClass = styles[variant];
   const sizeClass = styles[size];
 
   return (
     <button
+      title={hint}
       className={`${styles.button} ${variantClass} ${sizeClass} ${
         className || ''
       }`}
