@@ -45,25 +45,32 @@ export const Header = (props: HeaderProps) => {
       <ToggleButton className={styles.toggle} onClick={props.toggleSidebar} />
 
       {currentAuthor && (
-        <Button variant="secondary" onClick={() => handleClearAuthor()}>
+        <Button
+          hint="Clear the author from search tags"
+          variant="secondary"
+          onClick={() => handleClearAuthor()}
+        >
           <ClearIcon />
-          <span>&nbsp;Clear author &quot;{currentAuthor}&quot;</span>
+          <span className={styles.shortOnSmall}>&nbsp;{currentAuthor}</span>
         </Button>
       )}
 
       {deletedArticles?.length && (
         <Button
+          hint="Restore deleted articles"
           variant="secondary"
           onClick={() => handleRestoreDeletedArticles()}
         >
           <RestoreIcon />
-          <span>&nbsp;Restore deleted articles</span>
+          <span className={styles.hideOnSmall}>
+            &nbsp;Restore deleted articles
+          </span>
         </Button>
       )}
 
       <Button className="margin-left-auto" variant="secondary">
         <PersonIcon />
-        <span>&nbsp;Profile</span>
+        <span className={styles.hideOnSmall}>&nbsp;Profile</span>
       </Button>
     </header>
   );

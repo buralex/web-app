@@ -19,7 +19,18 @@ button.toggle {
     padding: 10px 15px;
   }
 
-  .header button span {
+  .header button {
+    padding: 5px 10px;
+  }
+
+  .shortOnSmall {
+    display: inline-block;
+    width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hideOnSmall {
     display: none;
   }
 
